@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label": "InfoTrustNet: Train", "type": "shell", "command": "python", "args": ["main.py", "train"], "group": "build", "problemMatcher": []},
+    {"label": "InfoTrustNet: Demo", "type": "shell", "command": "python", "args": ["main.py", "demo"], "dependsOn": "InfoTrustNet: Train", "dependsOrder": "sequence", "problemMatcher": []},
+    {"label": "InfoTrustNet: Tests", "type": "shell", "command": "python", "args": ["-m", "pytest", "-q"], "group": "test", "problemMatcher": []}
+  ]
+}
