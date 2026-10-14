@@ -1,0 +1,8 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    { "name": "InfoTrustNet: train", "type": "debugpy", "request": "launch", "program": "\${workspaceFolder}/main.py", "args": ["train"], "console": "integratedTerminal" },
+    { "name": "InfoTrustNet: evaluate", "type": "debugpy", "request": "launch", "program": "\${workspaceFolder}/main.py", "args": ["evaluate"], "console": "integratedTerminal" },
+    { "name": "InfoTrustNet: explain", "type": "debugpy", "request": "launch", "program": "\${workspaceFolder}/main.py", "args": ["explain", "--text", "Berlin is the capital of France.", "--source", "viralbuzz24.info"], "console": "integratedTerminal" }
+  ]
+}
